@@ -1,0 +1,47 @@
+/* .success-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  animation: fadeOut 3s forwards; 
+  Hiệu ứng biến mất sau 3 giây 
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+} */
+
+.success-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #e7f1e4;
+  color: #0e4e1d;
+  padding: 30px 30px;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 5px;
+  background-color: #28a745;
+  width: 100%;
+  animation: progressBar 3s linear forwards; /* Thời gian chạy: 3 giây */
+}
+
+@keyframes progressBar {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}

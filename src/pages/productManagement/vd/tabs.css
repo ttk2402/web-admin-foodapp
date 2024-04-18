@@ -1,0 +1,383 @@
+
+  
+  /* .link{
+    width: 150px;
+    margin-right: 0;
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid green;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
+
+ /* tab hiển thị lên trên nền */
+/*.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(205, 205, 207, 0.315); /* Màu nền bóng mờ */
+/*  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Tạo bóng mờ cho modal */
+/*  position: relative; /* Đặt vị trí tương đối để có thể đặt button tuyệt đối */
+/*}
+
+.close {
+    position: absolute;
+    top: -6px;
+    right: 7px;
+    /* padding: 20px; */
+ /*   cursor: pointer;
+    /* height: 23px; */
+/*    font-size: 26px;
+    padding-bottom: 5px;
+
+}
+
+.close:hover {
+  color: red; /* Thay đổi màu khi trỏ chuột vào nút đóng */
+/*}
+
+/* .close-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #bbb; 
+} */
+
+/*.modal-content {
+  /* Thêm CSS tùy chỉnh cho nội dung modal */
+/*}
+*/
+
+
+/*tao don hanh nhan vien*/
+/* .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-section {
+  margin-bottom: 40px;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-item button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.order-list {
+  list-style: none;
+  padding: 0;
+}
+
+.order-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.print-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+} */
+
+
+
+/* trang ql nv */
+/* .datatable {
+  height:85%;
+  
+  padding: 8px;
+  
+ 
+
+    
+    button{
+      max-width: 30px;
+    }
+    .cellWithImg {
+      display: flex;
+      align-items: center;
+  
+      .cellImg {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+    }
+  
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.Active{
+      color: green;
+      background-color: rgba(0, 128, 0, 0.151);
+    }
+    &.Block {
+      color: goldenrod;
+      background-color: rgba(189, 189, 3, 0.103);
+    }
+    
+
+    
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: darkblue;
+      border: 1px dotted rgba(0, 0, 139, 0.596);
+      cursor: pointer;
+      &:hover{
+        background-color: #c6ebfa;
+        }
+    }
+    
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: crimson;
+      border: 1px dotted rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+      &:hover{
+        background-color: #fad3c6;
+        }
+    }
+    .blockButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: rgb(220, 120, 20);
+      border: 1px dotted rgba(220, 133, 20, 0.6);
+      cursor: pointer;
+      &:hover{
+        background-color: #fafac6;
+        }
+    }
+    .activeButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: rgb(32, 161, 15);
+      border: 1px dotted rgba(4, 106, 23, 0.6);
+      cursor: pointer;
+      &:hover{
+        background-color: #cbf6c8;
+        }
+    }
+  }
+}
+
+.success-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #e7f1e4;
+  color: #0e4e1d;
+  padding: 30px 30px;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 5px;
+  background-color: #28a745;
+  width: 100%;
+  animation: progressBar 2s linear forwards; 
+}
+
+@keyframes progressBar {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+} */
+
+
+/* tien trinh cap nhat don hang */
+/* .flex {
+  display: flex;
+  align-items: center;
+}
+
+.step-item {
+  flex: 1;
+  position: relative;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+}
+
+.step-item:not(:first-child)::before {
+  content: '';
+  background-color: #007bff;
+  position: absolute;
+  width: calc(100% - 25px);
+  height: 4px;
+  top: 50%;
+  left: calc(-100% + 27px);
+  transform: translateY(-267%);
+}
+
+.active .step {
+  background-color: #28a745;
+}
+
+.complete .step {
+  background-color: #28a745;
+}
+.complete p {
+  color: #0d3f29;
+}
+
+.complete:not(:first-child)::before,
+.active:not(:first-child)::before {
+  background-color: #28a745;
+}
+/* .cancel .step{
+  background-color: #dc3545; /* Màu đỏ cho trạng thái đã hủy */
+/*} */
+/* 
+.cancel::before {
+  background-color: #dc3545;
+} */
+/*
+.hide {
+  display: none; /* Ẩn nút */
+/*} */
+/* 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.step-item {
+  flex: 1;
+  position: relative;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+}
+
+.step-item:not(:first-child)::before {
+  content: '';
+  background-color: #007bff;
+  position: absolute;
+  width: calc(100% - 25px);
+  height: 4px;
+  top: 50%;
+  left: calc(-100% + 27px);
+  transform: translateY(-50%);
+}
+
+.active .step {
+  background-color: #28a745;
+}
+
+.complete .step {
+  background-color: #28a745;
+}
+
+.cancel .step {
+  background-color: #dc3545; /* Màu đỏ cho trạng thái hủy */
+/*}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.hide {
+  display: none;
+} */

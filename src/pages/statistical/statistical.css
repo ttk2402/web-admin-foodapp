@@ -1,0 +1,106 @@
+.home {
+    display: flex;
+    .sidebar {
+        /* Thiết lập thanh sidebar ở vị trí cố định */
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 215px; /* Thiết lập kích thước của thanh sidebar */
+        background-color: #fff; /* Màu nền của thanh sidebar */
+        overflow-y: auto; /* Cho phép thanh cuộn nếu nội dung quá dài */
+    }
+    .navbar {
+        /* Thiết lập thanh navbar ở vị trí cố định
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000; /* Đảm bảo thanh navbar hiển thị trên các phần khác */
+        /* background-color: #fff; Màu nền của thanh navbar */
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Hiển thị đổ bóng */
+        /* padding: 10px 20px; Khoảng cách giữa các phần tử bên trong thanh navbar */
+    /* } */ 
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); 
+    /* padding: 10px; */
+    z-index: 1000; /* Đảm bảo thanh navbar hiển thị trên cùng */
+    }
+    .homeContainer{
+        
+        flex: 6;
+        
+        /* padding: 20px; */
+        position: relative; /* Đảm bảo nội dung trong homeContainer không bị che khuất */
+        margin-left: 215px; /* Đảm bảo nội dung không bị che khuất bởi thanh sidebar */
+       
+        .widgets, .charts{
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        .charts{
+            padding: 5px 20px;
+        }
+        .chartsPro{
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        .widgets1{
+            padding: 20px;
+            max-width: 250px;
+        }
+        
+        .listContainer{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            /* padding: 20px; */
+            padding: 0px 20px 20px 20px;
+            /* background-color: rgb(246, 249, 250); */
+            background-color: aliceblue;
+            margin: 20px;
+            .listTitle{
+                padding: 30px 20px 20px 20px;
+                
+                font-size: 18px;
+                font-weight: bold;
+                color: gray;
+        
+             }
+
+        
+        }
+    }
+}
+
+
+.tableRowStats {
+    height: 110px; /* Đặt chiều cao mong muốn của mỗi dòng dữ liệu */
+}
+.tableRowEmpty {
+    height: 50px; /* Chiều cao tương tự như hàng có dữ liệu */
+}
+
+/* bieu do cot Revenue */
+.listRevenue{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    /* padding: 20px; */
+    padding: 0px 20px 20px 20px;
+    /* background-color: rgb(246, 249, 250); */
+    /* background-color: aliceblue; */
+    margin: 20px;
+    .listTitle{
+        padding: 30px 20px 20px 20px;
+        
+        font-size: 18px;
+        font-weight: bold;
+        color: gray;
+
+     }
+}
